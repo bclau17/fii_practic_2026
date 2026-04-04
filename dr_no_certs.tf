@@ -76,7 +76,7 @@ locals {
       {
         Sid       = "Allow EC2 and Auto Scaling use of the key"
         Effect    = "Allow"
-        Principal = { Service = ["ec2.amazonaws.com", "autoscaling.amazonaws.com"] }
+        Principal = { Service = ["ec2.amazonaws.com"] }
         Action = [
           "kms:Encrypt",
           "kms:Decrypt",
